@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# toDos-App 프로젝트 (11월 진행완료)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. create-react-app 설치 및 사용 학습완료
 
-## Available Scripts
+2. useState 사용시 useEffect를 통해 API를 딱 한번만 호출하고 다시는 호출하지 않게 셋팅할 수도 있다는 것을 알게 되었음. 또한 특별히 지정한 dependency에 대해 변화가 생길때만 호출하게 만들수도 있음.
 
-In the project directory, you can run:
+3. map 사용을 통해 원하는 배열을 얻을 수 있음.
 
-### `npm start`
+프로젝트 설명: toDo, toDos에 useState, map 등을 적용하여 해야할 일들에 대한 입력을 배열에 넣어 유저에게 보여주는 기능을 구현하였습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# toDos-App 프로젝트 Update (12/4-5)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 함수형 컴포넌트의 장점 중 하나인 코드 재사용성을 높이기 위해 하나의 파일로 작성되어져 있던 코드를 각각의 컴포넌트 기능별로 분해하는 리팩토링 과정을 진행하였음.
 
-### `npm test`
+2. 추후 active 모드와 non-active 모드 전환을 구현하기 위해 checkbox UI 추가, 삭제 기능을 구현하기 위해 react-icons를 이용하여 delete용 UI 추가 완료.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. 각각의 toDo 별로 고유한 id를 가지게 만들기 위해서 uuid 도입.
 
-### `npm run build`
+4. 아이템 삭제, 아이템 필터링 헤더 기능 구현
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. PostCSS를 이용한 스타일링
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 추가로 구현 예정인 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 전체 배경 화이트 & 다크 모드
+2. 로컬 storage 도입
