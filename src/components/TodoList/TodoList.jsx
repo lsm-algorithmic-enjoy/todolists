@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddTodo from "../AddTodo/AddTodo";
 import Todo from "../Todo/Todo";
 import styles from "./TodoList.module.css";
 
 export default function App({ filter }) {
-  const [toDos, setToDos] = useState([]);
+  const [toDos, setToDos] = useState(() => readfromLocal());
   const filtered = getFilteredItems(toDos, filter);
+
+  useEffect(() => {
+    localStorage.setItem("toDos", JSON.stringify(toDos));
+  }, [toDos]);
+
   const onAdd = (todo) => {
     setToDos([...toDos, todo]);
   };
@@ -45,4 +50,9 @@ export default function App({ filter }) {
       <AddTodo onAdd={onAdd} />
     </section>
   );
+}
+
+function readfromLocal() {
+  const toDos = localStorage.getItem("toDos");
+  return toDos ? JSON.parse(toDos) : [];
 }

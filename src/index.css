@@ -77,3 +77,10 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-accent);
 }
+
+html.dark {
+  --color-bg-dark: #1a1c20;
+  --color-bg: #22242b;
+  --color-grey: #4e4e4e;
+  --color-text: #fdfffd;
+}
