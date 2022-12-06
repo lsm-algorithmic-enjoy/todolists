@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/todolists/static/css/main.b663abbc.css",
-    "main.js": "/todolists/static/js/main.29edd28a.js",
+    "main.css": "/todolists/static/css/main.ba49505b.css",
+    "main.js": "/todolists/static/js/main.9329ac24.js",
     "index.html": "/todolists/index.html",
-    "main.b663abbc.css.map": "/todolists/static/css/main.b663abbc.css.map",
-    "main.29edd28a.js.map": "/todolists/static/js/main.29edd28a.js.map"
+    "main.ba49505b.css.map": "/todolists/static/css/main.ba49505b.css.map",
+    "main.9329ac24.js.map": "/todolists/static/js/main.9329ac24.js.map"
   },
   "entrypoints": [
-    "static/css/main.b663abbc.css",
-    "static/js/main.29edd28a.js"
+    "static/css/main.ba49505b.css",
+    "static/js/main.9329ac24.js"
   ]
 }
