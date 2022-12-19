@@ -25,3 +25,7 @@
 1. Context API를 활용한 전체 배경 화이트 & 다크 모드 기능 구현
 
 2. 새로고침해도 입력한 데이터가 저장될 수 있도록 로컬 storage 도입
+
+# baseurl 설정으로 netlify, gh-pages 동시 배포에 성공했습니다.
+
+Netlify Deployment: https://todolists-original.netlify.app/
